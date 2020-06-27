@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import CatComponent from './CatComponent'
+import GraceHopperQuoteComponent from './GraceHopperQuoteComponent'
+import MouseComponent from './MouseComponent'
 
+// Each child component is exported via "export default"
+// App Component renders 3 child components in order & only once 
 class App extends Component {
 	render() {
 		// your code in the return statement below!
@@ -7,6 +12,7 @@ class App extends Component {
 			<div className="App">
 				<CatComponent />
 				<GraceHopperQuoteComponent />
+				<MouseComponent />
 				{/* one more component missing */}
 			</div>
 		);
